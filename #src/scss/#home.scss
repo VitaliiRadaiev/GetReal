@@ -680,7 +680,9 @@
 
     &__row-1 {
         margin-bottom: 59px;
-        text-align: center;
+        @media (max-width: $md3+px) {
+            text-align: center;
+        }
     }
 
     &__title {

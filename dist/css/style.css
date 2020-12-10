@@ -2258,7 +2258,6 @@ img {
 
 .home-footer__row-1 {
   margin-bottom: 59px;
-  text-align: center;
 }
 
 .home-footer__title {
@@ -2749,6 +2748,10 @@ img {
 
   .testimonials-slider {
     margin-bottom: 100px;
+  }
+
+  .home-footer__row-1 {
+    text-align: center;
   }
 
   .home-footer__logo-list > li {
