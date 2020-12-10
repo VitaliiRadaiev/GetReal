@@ -1,0 +1,110 @@
+.top-line {
+    position: fixed;
+    min-height: 83px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px #0000001f;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+
+    }
+
+
+    &__menu {
+        @media (min-width: 992px) {
+            display: block !important;
+        }
+    }
+
+    &__burger {
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.menu {
+
+    @media (max-width: $md2+px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0 30px;
+        border-bottom: 1px solid rgba(#000, 0.2);
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media (max-width: $md2+px) {
+            display: block;
+            text-align: center;
+
+            & > li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 83px;
+        color: #004476;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.2em;
+        transition: all .2s ease;
+        padding: 10px 0;
+        margin: 0 20px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0%;
+            transition: all .2s ease;
+            background-color: $mainColor;
+        }
+
+        &.active {
+            font-weight: 800;
+
+            &:before {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: $md2+px) {
+            min-height: 40px;
+        }
+    }
+}
+.burger-wrap {
+}
+.burger {
+}
