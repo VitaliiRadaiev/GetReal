@@ -97,6 +97,11 @@
 
     &__title {
         margin-bottom: 33px;
+        font-size: 38px;
+
+        @media (max-width: 575px) {
+            font-size: 32px;
+        }
     }
 
     &__list {
@@ -189,6 +194,11 @@
 
     &__title {
         margin-bottom: 23px;
+        font-size: 38px;
+
+        @media (max-width: 575px) {
+            font-size: 32px;
+        }
     }
 
     &__list {

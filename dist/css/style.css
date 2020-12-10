@@ -1666,6 +1666,7 @@ img {
 
 .benefits-block__title {
   margin-bottom: 33px;
+  font-size: 38px;
 }
 
 .benefits-block__list {
@@ -1763,6 +1764,7 @@ img {
 
 .our-courses__title {
   margin-bottom: 23px;
+  font-size: 38px;
 }
 
 .our-courses__list {
@@ -2807,10 +2809,18 @@ img {
     font-size: 32px;
   }
 
+  .benefits-block__title {
+    font-size: 32px;
+  }
+
   .benefits-block__list > li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .our-courses__title {
+    font-size: 32px;
   }
 
   .testimonials-slider__title {
