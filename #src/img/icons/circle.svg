@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="137.1263mm"
+   height="137.12653mm"
+   viewBox="0 0 137.1263 137.12653"
+   version="1.1"
+   id="svg867"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="circle.svg">
+  <defs
+     id="defs861" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="278.93747"
+     inkscape:cy="259.0988"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1500"
+     inkscape:window-height="1040"
+     inkscape:window-x="26"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata864">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-12.945856,-66.61827)">
+    <path
+       d="m 50.439187,76.998926 c 13.161337,-7.065218 28.330742,-9.454877 43.026806,-6.777956 14.695987,2.677103 28.048577,10.262167 37.873337,21.514341 9.8245,11.252399 15.53958,25.505659 16.21042,40.428409 0.67084,14.92288 -3.74222,29.63145 -12.51748,41.71987 -8.77528,12.08858 -21.39386,20.84156 -35.790343,24.82542 -14.396545,3.98544 -29.719225,2.96642 -43.461455,-2.89015 C 42.038304,189.96392 30.690241,179.61739 23.592458,166.47342 16.494796,153.32957 14.067944,138.16605 16.708636,123.4635"
+       stroke="#86b94d"
+       stroke-width="3.17944"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       id="path2"
+       style="fill:none" />
+  </g>
+</svg>

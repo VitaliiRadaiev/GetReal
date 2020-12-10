@@ -196,7 +196,7 @@ img {
 .title-2 {
 	margin-top: 0;
 	font-weight: bold;
-	font-size: 38px;
+	font-size: 36px;
 	line-height: 1.21em;
 	letter-spacing: 0.012em;
 	color: $textColor;
@@ -313,7 +313,19 @@ button.btn-default {
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
 	& h1 {}
-	& h2 {}
+	& h2 {
+		margin-top: 0;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 1.21em;
+		letter-spacing: 0.012em;
+		color: $textColor;
+		margin-bottom: 0.47em;
+	
+		@media (max-width: 575px) {
+			font-size: 32px;
+		}
+	}
 	& h3 {}
 	& h4 {}
 
@@ -323,7 +335,7 @@ button.btn-default {
 	& h6 {}
 
 	& p {
-
+		margin-bottom: 1.6em;
 	}
 
 	& ul {}
@@ -358,6 +370,10 @@ button.btn-default {
 	// ==== AND HOME =====================================================
 	
 // ==== AND PAGES =====================================================
+
+// ==== GLOBAL =====================================================
+@import "_global";
+// ==== AND GLOBAL =====================================================
 
 
 
