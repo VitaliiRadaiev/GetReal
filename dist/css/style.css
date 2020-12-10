@@ -1600,6 +1600,16 @@ img {
   background-color: #004476;
 }
 
+.promo-header__bg:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
 .promo-header__body {
   min-height: 545px;
   padding-top: 30px;
@@ -2003,10 +2013,21 @@ img {
   display: inline-block;
   position: relative;
   padding-right: 17px;
-  border-bottom: 2px solid #184374;
+  position: relative;
+}
+
+.big-card-courses__link:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 0;
+  opacity: 0;
+  height: 2px;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+  background: #184374;
 }
 
 .big-card-courses__link:before {
@@ -2132,8 +2153,10 @@ img {
   width: 75px;
 }
 
-.testimonials-slider__thumbs .swiper-slide.swiper-slide-thumb-active .testimonials-slider__photo::before {
-  background-size: 99%;
+.testimonials-slider__thumbs .swiper-slide.swiper-slide-thumb-active .progressCircle-progress {
+  opacity: 1;
+  -webkit-animation: circleAnim 12s linear forwards;
+          animation: circleAnim 12s linear forwards;
 }
 
 .testimonials-slider__photo {
@@ -2143,21 +2166,41 @@ img {
   width: 100%;
 }
 
-.testimonials-slider__photo:before {
+.testimonials-slider__photo > svg {
   position: absolute;
   content: '';
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-49%, -50%);
-      -ms-transform: translate(-49%, -50%);
-          transform: translate(-49%, -50%);
-  height: 112%;
-  width: 112%;
-  background: url(../img/icons/circle.svg) center no-repeat;
-  background-size: 0%;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+      -ms-transform: translate(-50%, -50%) rotate(-30deg);
+          transform: translate(-50%, -50%) rotate(-30deg);
+  height: auto;
+  width: 123%;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    stroke-dashoffset: 100;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    stroke-dashoffset: 100;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.testimonials-slider__photo .progressCircle-progress {
+  stroke-dashoffset: 100;
+  opacity: 0;
 }
 
 .testimonials-slider__photo > span {
@@ -2239,7 +2282,7 @@ img {
   left: 0px;
   width: 100%;
   height: 78%;
-  background: #004476;
+  background: #133153;
   z-index: -1;
 }
 
@@ -2633,8 +2676,9 @@ img {
     width: 100%;
   }
 
-  .big-card-courses__link:hover {
-    opacity: 0.7;
+  .big-card-courses__link:hover:after {
+    width: 100%;
+    opacity: 1;
   }
 
   .testimonials-slider__btn:hover {

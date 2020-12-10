@@ -397,6 +397,10 @@ move();
         thumbs: {
           swiper: galleryThumbs
         },
+        autoplay: {
+          delay: 11980,
+          disableOnInteraction: false,
+        },
         navigation: {
             nextEl: '.testimonials-slider__btn_right',
             prevEl: '.testimonials-slider__btn_left',
@@ -407,7 +411,6 @@ move();
   ;
 
 	// ==== AND PAGES =====================================================
-
 
 });
 

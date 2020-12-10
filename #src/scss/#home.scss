@@ -8,6 +8,17 @@
         height: 100%;
         z-index: -1;
         background-color: $mainColor2;
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(#000, 0.15);
+        }
+
     }
 
     &__body {
@@ -416,13 +427,28 @@
         display: inline-block;
         position: relative;
         padding-right: 17px;
-        border-bottom: 2px solid $textColor;
-        transition: all .2s ease;
+        position: relative;
+       
 
         @media (min-width: 992px) {
             &:hover {
-                opacity: 0.7;
+                &:after {
+                    width: 100%;
+                    opacity: 1;
+                }
             }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 0;
+            opacity: 0;
+            height: 2px;
+            transition: all .2s ease;
+            background: $textColor;
         }
 
         &:before {
@@ -557,8 +583,9 @@
             }
 
             &.swiper-slide-thumb-active {
-                & .testimonials-slider__photo::before {
-                    background-size: 99%;
+                & .progressCircle-progress {
+                    opacity: 1;
+                    animation: circleAnim 12s linear forwards;
                 }
             }
         }
@@ -570,18 +597,29 @@
         height: 100%;
         width: 100%;
 
-        &:before {
+        & > svg {
             position: absolute;
             content: '';
             top: 50%;
             left: 50%;
-            transform: translate(-49%,-50%);
-            height: 112%;
-            width: 112%;
-            background: url(../img/icons/circle.svg) center no-repeat;
-            background-size: 0%;
-            transition: all .2s ease;
+            transform: translate(-50%,-50%) rotate(-30deg);
+            height: auto;
+            width: 123%;
+        }
 
+        @keyframes circleAnim {
+            from {
+                stroke-dashoffset: 100; 
+            }
+            to {
+                stroke-dashoffset: 0; 
+            }
+        }
+
+        & .progressCircle-progress {
+            stroke-dashoffset: 100;
+            opacity: 0;
+            
         }
 
 
@@ -593,6 +631,7 @@
             overflow: hidden;
             position: relative;
         }
+
         
     }
 
@@ -657,6 +696,7 @@
 
 
 
+
 .home-footer {
     position: relative;
     padding: 1px 0;
@@ -667,7 +707,7 @@
         left: 0px;
         width: 100%;
         height: 78%;
-        background: $mainColor2;
+        background: #133153;
         z-index: -1;
     }
     &__body {
@@ -972,3 +1012,4 @@
         }
     }
 }
+
