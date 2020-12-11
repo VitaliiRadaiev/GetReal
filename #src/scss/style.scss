@@ -25,7 +25,7 @@
 //</МИКСИНЫ>===============================================================================================
 
 //<ICOMOON>===============================================================================================
-//@import "../icomoon/style";
+@import "../icomoon/style";
 //</ICOMOON>===============================================================================================
 
 //<FANCYBOX>===============================================================================================
@@ -202,7 +202,7 @@ img {
 	color: $textColor;
 
 	@media (max-width: 575px) {
-		font-size: 32px;
+		font-size: 30px;
 	}
 }
 
@@ -215,10 +215,19 @@ img {
 }
 
 .title-4 {
-
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.2em;
+	letter-spacing: 0.012em;
+	color: $textColor;
 }
 
 .title-5 {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.2em;
+	letter-spacing: 0.012em;
+	color: $textColor;
 
 }
 
@@ -227,7 +236,14 @@ img {
 }
 
 .text {
+	margin-bottom: 1.6em;
+	color: $textColor;
+	font-size: 18px;
+	line-height: 1.6em;
 
+	@media (max-width: $md4+px) {
+		font-size: 16px;
+	}
 }
 // === and title ========================================================================
 
@@ -336,9 +352,42 @@ button.btn-default {
 
 	& p {
 		margin-bottom: 1.6em;
+		color: $textColor;
+		font-size: 18px;
+		line-height: 1.6em;
+
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
 	}
 
-	& ul {}
+	& ul {
+		& > li {
+			font-size: 18px;
+			line-height: 1.55em;
+			letter-spacing: 0.012em;
+			color: $textColor;
+			margin-bottom: 0.94em;
+			position: relative;
+			padding-left: 42px;
+
+			@media (max-width: $md4+px) {
+				font-size: 16px;
+			}
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				height: 28px;
+				width: 28px;
+				background-color: $mainColor;
+				border-radius: 50%;
+				background: $mainColor url(../img/icons/chek.svg) center no-repeat;
+			}
+		}
+	}
 
 	& ol {}
 
@@ -360,6 +409,9 @@ button.btn-default {
 
 // ==== BLOCKS =====================================================
 @import "#top-line";
+@import "#header";
+@import "##video";
+@import "#footer";
 // ==== BLOCKS =====================================================
 
 

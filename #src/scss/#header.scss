@@ -1,0 +1,56 @@
+.header {
+    position: relative;
+    margin-bottom: 60px;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 78.5%;
+        z-index: -1;
+        background: linear-gradient(0deg, #004476, #004476), #C4C4C4;
+
+        @media (max-width: $md4+px) {
+            height: 86%;
+         }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 371px;
+
+        @media (max-width: $md4+px) {
+           min-height: 318px;
+        }
+    }
+
+    &__title {
+        display: inline-flex;
+        background-color: #333;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.012em;
+        color: $textColor;
+        justify-content: center;
+        align-items: center;
+        min-width: 442px;
+        min-height: 154px;
+        margin: 0;
+        background: url(../img/photo/title-decor.svg) center no-repeat;
+        background-size: 100%;
+        padding: 20px 55px 30px;
+
+        @media (max-width: $md4+px) {
+            min-width: 362px;
+            min-height: 84px;
+            background-size: 100% 150%;
+        }
+    }
+}
+.ibg {
+}
+.container {
+}

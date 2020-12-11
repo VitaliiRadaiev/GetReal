@@ -72,6 +72,8 @@ $(document).ready(function () {
 	// ==== PAGES =====================================================
 	
 	@@include('#tistimonials-slider.js');
+	@@include('#tistimonials-slider-2.js');
+	@@include('##video.js');
 
 	// ==== AND PAGES =====================================================
 

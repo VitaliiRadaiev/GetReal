@@ -1,3 +1,17 @@
+.home {
+    & .block-column-2 {
+        & .column {
+            & p {
+                color: rgba($textColor, 0.64);
+                font-size: 16px;
+                line-height: 1.66em;
+            }
+            
+        }
+    }
+}
+
+
 .promo-header {
     position: relative;
     &__bg {
@@ -891,6 +905,7 @@
         @media (max-width: $md3+px) {
             display: block;
             text-align: center;
+            padding: 0;
         }
 
         & a {

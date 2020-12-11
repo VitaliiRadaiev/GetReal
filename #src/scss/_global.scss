@@ -29,6 +29,10 @@
 			& .btn-default {
 				margin-top: 8px;
 			}
+
+			& .video-block {
+				height: 400px;
+			}
 		}
 	}
 	&__inner {
@@ -45,4 +49,92 @@
 }
 
 
+
+
+
+
+.testimonial {
+	padding: 28px 32px 40px;
+	display: flex;
+
+		&__text-wrap {
+			flex: 1 1 auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__quote {
+			height: 72px;
+			width: 72px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+			margin-left: -7px;
+
+			@media (max-width: $md4+px) {
+				height: 52px;
+				width: 52px;
+			}
+			
+			& img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		&__text {
+			max-width: 713px;
+			margin-bottom: 32px;
+			flex: 1 1 auto;
+		}
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+
+			& .btn-default {
+				min-width: 238px;
+				min-height: 54px;
+				font-size: 16px;
+				margin-top: 22px;
+			}
+		}
+
+		&__author {
+			display: flex;
+			margin-top: 16px;
+			margin-right: 20px;
+			align-items: center;
+		}
+
+		&__author-photo {
+			height: 68px;
+			width: 68px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right: 20px;
+		}
+
+		&__author-name {
+			margin-bottom: 8px;
+		}
+
+		&__author-position {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.22em;
+			letter-spacing: 0.012em;
+			color: rgba($textColor, 0.5);
+		}
+}
+
+
+.box {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 32px rgba(24, 68, 116, 0.24);
+	border-radius: 8px;
+}
 

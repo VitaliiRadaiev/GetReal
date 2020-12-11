@@ -10,25 +10,241 @@
 			@@include('_top-line.html',{})
 			<!-- == // TOP LINE ================== -->
 
-			<header class="header">
-				<div class="header__bg ibg">
-					<!-- <img src="img/photo/bg2.jpg" alt="img"> -->
-				</div>
-				<div class="header__body container">
-					<h1 class="header__title">
-						About Us
-					</h1>
-				</div>
-			</header>
+			@@include('_header.html',{
+				"title": 'About Us'
+			})
 
 			<!-- == PAGE CONTENT ================== -->
 			<main class="page">
+				<section class="block-column-2">
+					<div class="block-column-2__body container">
+						<div class="column text-content">
+							<h2>Title(About Us)</h2>
 
+							<p>
+								Eleifend nulla tellus mi nulla bibendum egestas. Et lorem morbi diam cras duis et. Id id quam velit dictum eget augue. Lectus viverra viverra ac mattis metus, at a. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+							</p>
+							
+							<ul>
+								<li>
+									Usp 1 : Eleifend nulla tellus mi nulla bibendum.
+								</li>
+								<li>
+									Usp 2 : Eleifend nulla tellus mi nulla bibendum.
+								</li>
+								<li>
+									Usp 3 : Eleifend nulla tellus mi nulla bibendum.
+								</li>
+							</ul>
+						</div>
+						<div class="column">
+							<div class="block-column-2__inner ibg">
+								<div class="video-block">
+									<video id="player" class="video-block__video" loop poster="img/photo/poster.jpg">
+									  <source src="img/videoForTest.mp4" type="video/mp4" />
+									</video>
+									<div class="video-block__play-pause">
+										<span class="icon-play3"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="our-team">
+					<div class="container">
+						<h2 class="our-team__title title-2">Title(Introduce Staff)</h2>
+						<div class="our-team__subtitle text">
+							Eleifend nulla tellus mi nulla bibendum egestas. Et lorem morbi diam cras duis et. Id id quam velit dictum eget augue. Lectus viverra viverra ac mattis metus, at a.
+						</div>
+						<ul class="our-team__list">
+							<li>
+								<div class="card-our-team">
+									<div class="card-our-team__photo ibg">
+										<a href="#">
+											<img src="img/photo/Placeholder02.jpg" alt="img">
+										</a>
+									</div>
+									<div class="card-our-team__name title-5">Yousif Cross</div>
+									<div class="card-our-team__position">
+										VP Health
+									</div>
+									<div class="card-our-team__text">
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nos  
+									</div>
+									<a class="card-our-team__link" href="#">Read full story</a>
+								</div>
+							</li>
+							<li>
+								<div class="card-our-team">
+									<div class="card-our-team__photo ibg">
+										<a href="#">
+											<img src="img/photo/Placeholder02.jpg" alt="img">
+										</a>
+									</div>
+									<div class="card-our-team__name title-5">Yousif Cross</div>
+									<div class="card-our-team__position">
+										VP Health
+									</div>
+									<div class="card-our-team__text">
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nos  
+									</div>
+									<a class="card-our-team__link" href="#">Read full story</a>
+								</div>
+							</li>
+							<li>
+								<div class="card-our-team">
+									<div class="card-our-team__photo ibg">
+										<a href="#">
+											<img src="img/photo/Placeholder02.jpg" alt="img">
+										</a>
+									</div>
+									<div class="card-our-team__name title-5">Yousif Cross</div>
+									<div class="card-our-team__position">
+										VP Health
+									</div>
+									<div class="card-our-team__text">
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nos  
+									</div>
+									<a class="card-our-team__link" href="#">Read full story</a>
+								</div>
+							</li>
+							<li>
+								<div class="card-our-team">
+									<div class="card-our-team__photo ibg">
+										<a href="#">
+											<img src="img/photo/Placeholder02.jpg" alt="img">
+										</a>
+									</div>
+									<div class="card-our-team__name title-5">Yousif Cross</div>
+									<div class="card-our-team__position">
+										VP Health
+									</div>
+									<div class="card-our-team__text">
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nos  
+									</div>
+									<a class="card-our-team__link" href="#">Read full story</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="testimonials-slider-2">
+					<div class="container">
+						<h2 class="testimonials-slider-2__title title-2">What do our students say?</h2>
+						<div class="testimonials-slider-2__body">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide testimonial box">
+										<div class="testimonial__text-wrap">
+											<div class="testimonial__quote">
+												<img src="img/icons/carbon_quotes.svg" alt="quote">
+											</div>
+											<div class="testimonial__text text">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</div>
+											<div class="testimonial__row">
+												<div class="testimonial__author">
+													<div class="testimonial__author-photo ibg">
+														<img src="img/photo/slider-testimonial03.png" alt="photo">
+													</div>
+													<div class="testimonial__author-inner">
+														<div class="testimonial__author-name title-5">Jan Jansen</div>
+														<div class="testimonial__author-position">VP Health</div>	
+													</div>
+												</div>
+												<a href="#" class="btn-default">Check courses</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide testimonial box">
+										<div class="testimonial__text-wrap">
+											<div class="testimonial__quote">
+												<img src="img/icons/carbon_quotes.svg" alt="quote">
+											</div>
+											<div class="testimonial__text text">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.” Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</div>
+											<div class="testimonial__row">
+												<div class="testimonial__author">
+													<div class="testimonial__author-photo ibg">
+														<img src="img/photo/slider-testimonial02.png" alt="photo">
+													</div>
+													<div class="testimonial__author-inner">
+														<div class="testimonial__author-name title-5">Jan Jansen</div>
+														<div class="testimonial__author-position">VP Health</div>	
+													</div>
+												</div>
+												<a href="#" class="btn-default">Check courses</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide testimonial box">
+										<div class="testimonial__text-wrap">
+											<div class="testimonial__quote">
+												<img src="img/icons/carbon_quotes.svg" alt="quote">
+											</div>
+											<div class="testimonial__text text">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”</div>
+											<div class="testimonial__row">
+												<div class="testimonial__author">
+													<div class="testimonial__author-photo ibg">
+														<img src="img/photo/slider-testimonial03.png" alt="photo">
+													</div>
+													<div class="testimonial__author-inner">
+														<div class="testimonial__author-name title-5">Jan Jansen</div>
+														<div class="testimonial__author-position">VP Health</div>	
+													</div>
+												</div>
+												<a href="#" class="btn-default">Check courses</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="testimonials-slider-2__control">
+								<div class="testimonials-slider-2__btn testimonials-slider-2__btn_left">
+									<span>
+										<img src="img/icons/slider-arrow-left.svg" alt="arrow">
+									</span>
+								</div>
+								<div class="testimonials-slider-2__btn testimonials-slider-2__btn_right">
+									<span>
+										<img src="img/icons/slider-arrow-right.svg" alt="arrow">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="contact-us-block">
+					<div class="contact-us-block__body container">
+						<div class="contact-us-block__column-1 text-content">
+							<h2>Title(Contact/Need Advice?)</h2>
+							<p>Eleifend nulla tellus mi nulla bibendum egestas. Et lorem morbi diam cras duis et. Id id quam velit dictum eget augue. Lectus viverra viverra ac mattis metus, at a.</p>
+						</div>
+						<div class="contact-us-block__column-2">
+							<div class="contact-us-block__email">
+								<div class="contact-us-block__email-icon">
+									<span>
+										<img src="img/icons/Letter.svg" alt="icon">
+									</span>
+								</div>
+								<div class="contact-us-block__email-inner">
+									<p>Email</p>
+									<p>getreal@mail.com</p>
+								</div>
+							</div>
+							<a href="#" class="btn-default arrow">
+								Contact us
+							</a>
+						</div>
+					</div>
+				</section>
             </main>
 			<!-- == // PAGE CONTENT ================== -->
 
 			<!-- == FOOTER ================== -->
-
+			@@include('_footer.html',{})
 			<!-- == // FOOTER ================== -->
 		</div>
 		<!-- == // WRAPPER ================== -->
