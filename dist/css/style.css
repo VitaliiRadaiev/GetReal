@@ -2092,7 +2092,15 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.15);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#004476+0,004476+100&1+8,0+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#004476), color-stop(8%, #004476), to(rgba(0, 68, 118, 0)));
+  background: -o-linear-gradient(left, #004476 0%, #004476 8%, rgba(0, 68, 118, 0) 100%);
+  background: linear-gradient(to right, #004476 0%, #004476 8%, rgba(0, 68, 118, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004476', endColorstr='#00004476',GradientType=1 );
+  /* IE6-9 */
 }
 
 .promo-header__body {
@@ -2109,10 +2117,24 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.promo-header__top-layer-img {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  width: 397px;
+}
+
+.promo-header__top-layer-img img {
+  width: 100%;
 }
 
 .promo-header__inner {
   padding-left: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .promo-header__title {
@@ -3768,6 +3790,11 @@ img {
     max-width: none;
   }
 
+  .promo-header__top-layer-img {
+    right: 10px;
+    width: 300px;
+  }
+
   .big-card-courses__body {
     display: block;
     padding: 0;
@@ -3875,6 +3902,10 @@ img {
   .footer__bottom-right > a {
     margin-left: 30px;
     margin-right: 30px;
+  }
+
+  .promo-header__top-layer-img {
+    display: none;
   }
 
   .promo-header__title {
