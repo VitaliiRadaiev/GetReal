@@ -2842,7 +2842,7 @@ img {
 }
 
 .home-footer__logo-list > li img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .home-footer__row-2 {
